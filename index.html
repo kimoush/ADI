@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-    
 </head>
 <body>
-    <div>
+    <!--HEADER IMG-->
+    <div class="headerandfooter">
         <img src="assets/header.png">
     </div>
     <!--BREADCRUMBS-->
@@ -33,11 +33,11 @@
 
     <!--GUIDE-->
     <section id="guidetospeakers">
-        <div class="centerbuttons">
+        <div class="centering">
             <h1>A Guide to Speakers for Installers</h1>
             <p>Speakers are an essential component of any <a href="#">audio system</a>, whether it's needed for listening to music, watching movies or entertaining guests. But with so many different types of speakers for <a href="#">residential and commercial applications</a>, it can be difficult to determine which ones are right for your customers. This guide will explore the different types of speakers, important speaker specs, the necessary accessories and more.</p>
-            <button onClick='window.location="#typesofspeakers"'>Types of Speakers</button>
-            <button onClick='showcommercial()'>Commercial Speakers</button>
+            <button onClick='window.location="#typesofspeakers"; showresidential();'>Types of Speakers</button>
+            <button onClick='window.location="#typesofspeakers"; showcommercial();'>Commercial Speakers</button>
             <button onClick='window.location="#receivers"'>Receivers and Amplifiers</button>
             <button onClick='window.location="#importantspecs"'>Important Speaker Specs</button>
             <button onClick='window.location="#accessories"'>Accessories</button>
@@ -47,12 +47,14 @@
     
     <!--TYPES OF SPEAKERS-->
     <section id="typesofspeakers">
-        <div class="centerbuttons">
+        <div class="centering">
             <h2>Types of Speakers</h2>
                 <button id="showresidential" class="selected">Residential Speakers</button>
                 <button id="showcommercial">Commercial Speakers</button>
         </div>
-        <div id="residentialspeakers" class="width1600">
+
+        <!--Residential Speakers-->
+        <div id="residentialspeakers" class="widthlarge">
             <!--Floor-standing-->
             <div class="containerlarge">
                 <img src="assets/residentialspeakers1.png">
@@ -70,7 +72,6 @@
                     </div>
                 </div>
             </div>
-            
             <!--Bookshelf-->
             <div class="containerlarge">
                 <img src="assets/residentialspeakers2.png">
@@ -88,7 +89,6 @@
                     </div>
                 </div>
             </div>
-
             <!--Soundbars-->
             <div class="containerlarge">
                 <img src="assets/residentialspeakers3.png">
@@ -106,7 +106,6 @@
                     </div>
                 </div>
             </div>
-
             <!--Subwoofers-->
             <div class="containerlarge">
                 <img src="assets/residentialspeakers4.png">
@@ -126,7 +125,6 @@
                     </div>
                 </div>
             </div>
-
             <!--Smart speakers-->
             <div class="containerlarge">
                 <img src="assets/residentialspeakers5.png">
@@ -144,7 +142,6 @@
                     </div>
                 </div>
             </div>
-        
             <!--In-wall and in-ceiling-->
             <div class="containerlarge">
                 <img src="assets/residentialspeakers6.png">
@@ -163,7 +160,6 @@
                     </div>
                 </div>
             </div>
-
             <!--Outdoor-->
             <div class="containerlarge">
                 <img src="assets/residentialspeakers7.png">
@@ -183,7 +179,9 @@
                 </div>
             </div>
         </div>
-        <div id="commercialspeakers" class="width1600">
+
+        <!--Commercial Speakers-->
+        <div id="commercialspeakers" class="widthlarge">
             <!--In-wall/in-ceiling-->
             <div class="containerlarge">
                 <img src="assets/commercialspeakers1.png">
@@ -279,8 +277,10 @@
 
     <!--RECEIVERS AND AMPLIFIERS-->
     <section id="receivers">
-        <h2>Receivers and Amplifiers</h2>
-        <div class="width1600">
+        <div class="centering">
+            <h2>Receivers and Amplifiers</h2>
+        </div>
+        <div class="widthlarge">
             <!--Receivers-->
             <div class="containerlarge">
                 <img src="assets/receivers.png">
@@ -314,9 +314,11 @@
     </section>
 
     <!--IMPORTANT SPEAKER SPECS-->
-    <section id="importantspecs">
-        <h2>Important Speaker Specs</h2>
-        <div class="width1600">
+    <section id="importantspecs" class="centering">
+        <div class="centering">
+            <h2>Important Speaker Specs</h2>
+        </div>
+        <div class="widthsmall">
             <div class="containersmall">
                 <div class="imagewithhover">
                     <img src="assets/specs1.png">
@@ -367,9 +369,11 @@
 
     <!--ACCESSORIES-->
     <section id="accessories">
-        <h2>Accessories</h2>
+        <div class="centering">
+            <h2>Accessories</h2>
+        </div>
         <!--Speaker accessories-->
-        <div class="width1600">
+        <div class="widthlarge">
             <div class="containerlarge">
                 <img src="assets/accessories1.png">
                 <div class="graybox">
@@ -411,8 +415,10 @@
 
     <!--SERVICES AND SUPPORT-->
     <section id="services">
-        <h2>Services and Support</h2>
-        <div class="width1600">
+        <div class="centering">
+            <h2>Services and Support</h2>
+        </div>
+        <div class="widthmedium">
             <div class="containermedium">
                 <img src="assets/services1.png">
                 <div class="darkgrayboxmedium">
@@ -463,6 +469,12 @@
             </div>
         </div>
     </section>
+
+    <!--FOOTER IMG-->
+    <div class="headerandfooter">
+        <img src="assets/footer.png">
+    </div>
+
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="adi.js"></script> 
 </body>
