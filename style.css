@@ -406,6 +406,12 @@ section{
 
 @media (max-width: 640px) {
 
+    .headerandfooter{
+        display: none;
+    }
+    #breadcrumbs{
+        display: none;
+    }
     .widthsmall{
         flex-wrap: wrap;
     }
@@ -415,7 +421,9 @@ section{
     .containerlarge {
         flex: 0 100%;
     }
-
+    .containermedium {
+        flex: 100%;
+    }
     .containersmall {
         flex: 0 50%;
         max-width: 220px;
