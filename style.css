@@ -396,6 +396,12 @@ section{
         line-height: 22px;
         color: #fff;
     }
+    .grayboxmedium{
+        min-height: 240px;
+    }
+    .darkgrayboxmedium{
+        min-height: 240px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -436,9 +442,9 @@ section{
         flex: 100%;
     }
     .grayboxmedium{
-        height: 300px;
+        min-height: 200px;
     }
     .darkgrayboxmedium{
-        height: 300px;
+        min-height: 200px;
     }
 }
