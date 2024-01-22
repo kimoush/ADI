@@ -9,6 +9,10 @@
 body{
     font-family: "Nunito Sans", sans-serif;
 }
+img{
+    border: 0;
+    display: block;
+}
 a{
     color: #006ae3;
     font-size: 14px;
@@ -405,7 +409,6 @@ section{
 }
 
 @media (max-width: 640px) {
-
     .headerandfooter{
         display: none;
     }
