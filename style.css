@@ -78,12 +78,6 @@ button:hover{
     background-color: #002856;
     color: #fff;
 }
-section{
-    padding: 40px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 /* BREADCRUMBS */
 #breadcrumbs{
@@ -101,16 +95,16 @@ section{
     font-size: 14px;
     font-weight: 400;
 }
-.breadcrumbs li {
+.breadcrumbs li{
     float:left;
     color: #2d2926;
 }
-.breadcrumbs li+li:before {
+.breadcrumbs li+li:before{
     color: #666;
     padding: 0 12px;
     content: "/\00a0";
 }
-.breadcrumbs a {
+.breadcrumbs a{
     font-weight: 400;
 }
 
@@ -147,9 +141,10 @@ section{
 /* CLASS */
 .widthlarge{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    flex-wrap:wrap;
     max-width: 1600px;
+    margin: auto;
 }
 .widthmedium{
     display: flex;
@@ -161,10 +156,10 @@ section{
     justify-content: center;
     max-width: 1600px;
 }
-.containerlarge {
+.containerlarge{
     flex: 0 50%;
     max-width: 790px;
-    padding: 0 5px 20px 0;
+    padding: 0 2px 20px 2px;
 }
 .containerlarge img{
     width: 100%;
@@ -283,6 +278,12 @@ section{
     width: 100%;
     margin: auto;
 }
+.sectionclass{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* ID */
 #guidetospeakers a{
@@ -308,9 +309,12 @@ section{
 #commercialspeakers{
     display: none;
 }
+#receivers{
+    padding: 40px 0;
+}
 
 /* RESPONSIVE */
-@media (max-width: 1024px) {
+@media (max-width: 1024px){
     h4{
         font-size: 20px;
         line-height: 28px;
@@ -339,10 +343,9 @@ section{
     .darkgrayboxmedium{
         min-height: 370px;
     }
-
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
     h1{
         font-weight: 700;
         font-size: 32px;
@@ -391,7 +394,7 @@ section{
     .widthmedium{
         flex-wrap: wrap;
     }
-    .containermedium {
+    .containermedium{
         flex: 0 50%;
         max-width: 380px;
     }
@@ -408,7 +411,7 @@ section{
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 640px){
     .headerandfooter{
         display: none;
     }
@@ -421,13 +424,13 @@ section{
     .widthmedium{
         flex-wrap: wrap;
     }
-    .containerlarge {
+    .containerlarge{
         flex: 0 100%;
     }
-    .containermedium {
+    .containermedium{
         flex: 100%;
     }
-    .containersmall {
+    .containersmall{
         flex: 0 50%;
         max-width: 220px;
     }
@@ -445,11 +448,11 @@ section{
 }
 
 @media (max-width: 360px) {
-    .containersmall {
+    .containersmall{
         flex: 0 50%;
         max-width: 150px;
     }
-    .containermedium {
+    .containermedium{
         flex: 100%;
     }
     .grayboxmedium{
